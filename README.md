@@ -10,4 +10,4 @@ It should be noted that in the network, the paper is slightly different. At the 
 代码基于文章的[Aerial Image Super Resolution via Wavelet Multiscale Convolutional Neural Networks]，wmcnn,由于文章附带的代码使用了python和matlab混合编程，以及一个pytorch版本，由于代码中使用了大量的数据集读取和预处理的过程，而且环境搭建异常，无法运行代码，故剥离了相关的网络结构，可直接使用。缺失了训练过程，你可以使用它很快的嵌入到你网络结构中，而不需要担心输入尺寸的 。
 
 
- 需要注意的是网络中和论文稍有不同的是，在网络的结构的末，个人感觉从160feature map 直接降到12，可能回到是会导致去噪性能损失，所以加了一个缓冲卷积，慢慢降feature map到12 
+ 需要注意的是网络中和论文稍有不同的是，在网络的结构的末，所以加了一个缓冲卷积，慢慢降feature map到12 
